@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Task List</title>
+  </head>
+  <body>
+    <!-- Beginning of the Task List Card -->
+    <div class="container mx-auto py-8 mt-10 max-w-sm rounded-lg">
+      <h1 class="text-center mb-5 text-lg font-semibold text-gray-500">
+        TASK LIST
+      </h1>
+      <!-- input section & button -->
+      <div class="width-full flex flex-col justify-center align-center">
+        <!-- input -->
+        <input
+          type="text"
+          name="add"
+          class="
+            outline-2 outline-blue-500
+            py-2
+            px-4
+            border border-gray-200
+            rounded-lg
+            mr-2
+            active:border-blue-500
+          "
+          placeholder="Add Your Task"
+        />
+        <!-- Add button -->
+        <button
+          type="button"
+          id="add"
+          class="
+            mt-6
+            py-2
+            px-4
+            rounded-lg
+            color-white
+            text-white
+            bg-blue-500
+            cursor-pointer
+            transition
+            duration-500
+            transform
+            hover:-translate-y-1
+          "
+        >
+          Add Task
+        </button>
+      </div>
+      <!-- End of the input & button section -->
+
+      <!-- Beginning of the Task List -->
+      <div class="mt-10">
+        <div
+          class="
+            text-gray-500
+            flex
+            justify-between
+            mb-3
+            py-2
+            px-1
+            border-gray-200
+            rounded-lg
+            border
+            mt-3
+            mx-auto
+            shadow-md
+            transition
+            duration-500
+            transform
+            hover:translate-x-2
+            cursor-pointer
+          "
+        >
+          <p class="ml-2">Building the navbar</p>
+          <span class="text-red-500 mr-2"
+            ><i class="fas fa-times-circle"></i
+          ></span>
+        </div>
+        <!-- Add Task 2 -->
+        <div
+          class="
+            text-gray-500
+            flex
+            justify-between
+            mb-3
+            py-2
+            px-1
+            border-gray-200
+            rounded-lg
+            border
+            mt-3
+            mx-auto
+            shadow-md
+            transition
+            duration-500
+            transform
+            hover:translate-x-2
+            cursor-pointer
+          "
+        >
+          <p class="ml-2">Building the contact form</p>
+          <span class="text-red-500 mr-2"
+            ><i class="fas fa-times-circle"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+    <!-- End of the task List card -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
