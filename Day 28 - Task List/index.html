@@ -9,12 +9,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Task List</title>
   </head>
   <body>
     <!-- Beginning of the Task List Card -->
     <div class="container mx-auto py-8 mt-10 max-w-sm rounded-lg">
-      <h1 class="text-center mb-5 text-lg font-semibold text-gray-500">
+      <h1 class="text-center mb-5 text-lg font-semibold text-gray-600">
         TASK LIST
       </h1>
       <!-- input section & button -->
@@ -23,6 +24,7 @@
         <input
           type="text"
           name="add"
+          id="input-add"
           class="
             outline-2 outline-blue-500
             py-2
@@ -37,7 +39,7 @@
         <!-- Add button -->
         <button
           type="button"
-          id="add"
+          id="add-btn"
           class="
             mt-6
             py-2
@@ -59,61 +61,7 @@
       <!-- End of the input & button section -->
 
       <!-- Beginning of the Task List -->
-      <div class="mt-10">
-        <div
-          class="
-            text-gray-500
-            flex
-            justify-between
-            mb-3
-            py-2
-            px-1
-            border-gray-200
-            rounded-lg
-            border
-            mt-3
-            mx-auto
-            shadow-md
-            transition
-            duration-500
-            transform
-            hover:translate-x-2
-            cursor-pointer
-          "
-        >
-          <p class="ml-2">Building the navbar</p>
-          <span class="text-red-500 mr-2"
-            ><i class="fas fa-times-circle"></i
-          ></span>
-        </div>
-        <!-- Add Task 2 -->
-        <div
-          class="
-            text-gray-500
-            flex
-            justify-between
-            mb-3
-            py-2
-            px-1
-            border-gray-200
-            rounded-lg
-            border
-            mt-3
-            mx-auto
-            shadow-md
-            transition
-            duration-500
-            transform
-            hover:translate-x-2
-            cursor-pointer
-          "
-        >
-          <p class="ml-2">Building the contact form</p>
-          <span class="text-red-500 mr-2"
-            ><i class="fas fa-times-circle"></i
-          ></span>
-        </div>
-      </div>
+      <div class="mt-10" id="task-card"></div>
     </div>
     <!-- End of the task List card -->
 
