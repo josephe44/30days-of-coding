@@ -1,0 +1,19 @@
+.success,
+.error,
+.removed {
+  color: #fff;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.success {
+  background-color: #4caf50;
+}
+
+.error {
+  background-color: #f44336;
+}
+
+.removed {
+  background-color: #663399;
+}
